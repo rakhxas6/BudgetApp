@@ -1,9 +1,9 @@
 import React from "react";
 import { Form } from "react-router-dom";
 import { FaUserPlus } from "react-icons/fa";
-import landingImg from "../assets/illustration-4f619ef1.jpg"
+import landingImg from "../assets/illustration-4f619ef1.jpg";
 
-export const Intro = () => {
+const Intro = () => {
   return (
     <div className="intro">
       <div>
@@ -23,7 +23,7 @@ export const Intro = () => {
             aria-label="Your Name"
             autoComplete="given-name"
           />
-          <input type="hidden" name="_action" value="newUser"/>
+          <input type="hidden" name="_action" value="newUser" />
           <button
             type="
               submit"
@@ -33,8 +33,10 @@ export const Intro = () => {
             <FaUserPlus width={20} />
           </button>
         </Form>
-          </div>
-          <img src={landingImg} alt=""  className="w-100"/>
+      </div>
+      <img src={landingImg} alt="" className="w-100" />
     </div>
   );
 };
+
+export default Intro;
